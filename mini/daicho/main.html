@@ -16,6 +16,18 @@
       crossorigin="anonymous"
     />
 
+    <!-- datetimepicker.css -->
+    <link 
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+      crossorigin="anonymous"
+    />
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" 
+    />
+
     <title>車両台帳</title>
   </head>
   <body>
@@ -23,11 +35,10 @@
 
 
     <!-- オートサイジング -->
-    <h1>オートサイジング </h1>
     <form>
       <div class="form-row align-items-center">
         <div class="col-auto">
-          <label class="col-form-label-sm" for="text5a">形式</label>
+          <label for="text5a">形式:</label>
           <label class="sr-only" for="text5a">形式</label>
           <input
             type="text"
@@ -37,357 +48,65 @@
           />
         </div>
         <div class="col-auto">
-            <label class="col-form-label-sm" for="text5b"><span>aaa</span></label>
-          <label class="sr-only" for="text5b">Last Name</label>
+            <label for="text5b"><span>車号:</span></label>
+            <label class="sr-only" for="text5b">車号</label>
           <input
             type="text"
             class="form-control mb-2"
             id="text5b"
-            placeholder="Last Name"
+            placeholder="車号"
           />
         </div>
-        <div class="col-auto">
-          <div class="form-check mb-2">
-            <input class="form-check-input" type="checkbox" id="check5" />
-            <label class="form-check-label" for="check5">Check</label>
-          </div>
-        </div>
-        <div class="col-auto">
-          <button type="submit" class="btn btn-primary mb-2">Submit</button>
-        </div>
       </div>
     </form>
 
-
-
-
-
-
-
-    <form>
-      <!-- テキスト・パスワード・テキストボックス -->
-    <h1>テキスト・パスワード・テキストボックス</h1>
-      <div class="form-group">
-        <label for="text1">Text:</label>
-        <input type="text" id="text1" class="form-control" />
-      </div>
-      <div class="form-group">
-        <label for="passwd1">Password:</label>
-        <input type="password" id="passwd1" class="form-control" />
-      </div>
-      <div class="form-group">
-        <label for="textarea1">Textarea:</label>
-        <textarea id="textarea1" class="form-control"></textarea>
-      </div>
-
-      <!-- セレクト部品 -->
-    <h1>セレクト部品 </h1>
-      <div class="form-group">
-        <label for="select1a">Select:</label>
-        <select id="select1a" class="form-control">
-          <option>Select A</option>
-          <option>Select B</option>
-        </select>
-      </div>
-
-      <!-- ファイル -->
-    <h1>ファイル</h1>
-      <div class="form-group">
-        <label for="file1">File:</label>
-        <input type="file" id="file1" class="form-control-file" />
-      </div>
-
-      <!-- レンジ -->
-    <h1>レンジ</h1>
-      <div class="form-group">
-        <label for="range1">Range:</label>
-        <input type="range" id="range1" class="form-control-range" />
-      </div>
-
-      <!-- チェックボックス -->
-    <h1>チェックボックス</h1>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="check1a" checked />
-        <label class="form-check-label" for="check1a">Check A</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="check1b" />
-        <label class="form-check-label" for="check1b">Check B</label>
-      </div>
-    </form>
-
-    <form>
-      <div class="custom-control custom-checkbox">
-        <input
-          type="checkbox"
-          class="custom-control-input"
-          id="custom-check-1"
-        />
-        <label class="custom-control-label" for="custom-check-1">Check A</label>
-      </div>
-      <div class="custom-control custom-radio">
-        <input
-          type="checkbox"
-          class="custom-control-input"
-          id="custom-radio-1"
-        />
-        <label class="custom-control-label" for="custom-radio-1">Radio A</label>
-      </div>
-      <div class="custom-file">
-        <input
-          type="file"
-          class="custom-file-input"
-          id="custom-file-1"
-          required
-        />
-        <label class="custom-file-label" for="custom-file-1"
-          >Choose file...</label
-        >
-      </div>
-      <div class="form-group">
-        <label for="custom-select-1b">Select(Normal):</label>
-        <select id="custom-select-1b" class="custom-select">
-          <option>Select A</option>
-          <option>Select B</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="custom-select-1a">Select(Small):</label>
-        <select id="custom-select-1a" class="custom-select custom-select-sm">
-          <option>Select A</option>
-          <option>Select B</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="custom-select-1c">Select(Large):</label>
-        <select id="custom-select-1c" class="custom-select custom-select-lg">
-          <option>Select A</option>
-          <option>Select B</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="custom-range-1">Range:</label>
-        <input type="range" class="custom-range" id="custom-range-1" />
-      </div>
-    </form>
-
-    <!-- インラインフォーム -->
-    <h1>インラインフォーム</h1>
-    <div class="form-check form-check-inline">
-      <input
-        class="form-check-input"
-        type="radio"
-        name="radio2"
-        id="radio2a"
-        value="A"
-      />
-      <label class="form-check-label" for="radio2a">A</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input
-        class="form-check-input"
-        type="radio"
-        name="radio2"
-        id="radio2b"
-        value="B"
-      />
-      <label class="form-check-label" for="radio2b">B</label>
-    </div>
-
-    <!-- ラベルの横置並べ -->
-    <h1>ラベルの横置並べ</h1>
-    <form>
-      <div class="form-group row">
-        <label for="text3a" class="col-sm-2 col-form-label">First Name</label>
-        <div class="col-sm-10">
-          <input type="text" id="text3a" class="form-control" />
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="text3b" class="col-sm-2 col-form-label">Last name</label>
-        <div class="col-sm-10">
-          <input type="text" id="text3b" class="form-control" />
-        </div>
-      </div>
-    </form>
-
-    <!-- オートサイジング -->
-    <h1>オートサイジング </h1>
-    <form>
+    <div class="form-group">
       <div class="form-row align-items-center">
-        <div class="col-auto">
-          <label class="sr-only" for="text5a">First Name</label>
-          <input
-            type="text"
-            class="form-control mb-2"
-            id="text5a"
-            placeholder="First Name"
-          />
-        </div>
-        <div class="col-auto">
-          <label class="sr-only" for="text5b">Last Name</label>
-          <input
-            type="text"
-            class="form-control mb-2"
-            id="text5b"
-            placeholder="Last Name"
-          />
-        </div>
-        <div class="col-auto">
-          <div class="form-check mb-2">
-            <input class="form-check-input" type="checkbox" id="check5" />
-            <label class="form-check-label" for="check5">Check</label>
-          </div>
-        </div>
-        <div class="col-auto">
-          <button type="submit" class="btn btn-primary mb-2">Submit</button>
-        </div>
-      </div>
-    </form>
-
-    <!-- フォームサイズ -->
-    <h1>フォームサイズ</h1>
-    <div class="form-group">
-      <label for="text6a" class="col-form-label-lg">Large size</label>
-      <input
-        class="form-control form-control-lg"
-        type="text"
-        id="text6a"
-        placeholder="Large size"
-      />
-    </div>
-    <div class="form-group">
-      <label for="text6b">Normal size</label>
-      <input
-        class="form-control"
-        type="text"
-        id="text6b"
-        placeholder="Normal size"
-      />
-    </div>
-    <div class="form-group">
-      <label for="text6c" class="col-form-label-sm">Small size</label>
-      <input
-        class="form-control form-control-sm"
-        type="text"
-        id="text6c"
-        placeholder="Small size"
-      />
-    </div>
-
-    <!-- リードオンリー -->
-    <h1>リードオンリー</h1>
-    <input type="text" readonly class="form-control" value="Readonly" />
-    <input
-      type="text"
-      readonly
-      class="form-control-plaintext"
-      value="Readonly plaintext"
-    />
-
-    <!-- 無効化 -->
-    <h1><無効化/h1>
-    <input type="text" disabled class="form-control" placeholder="Text" />
-    <select disabled class="form-control"
-      >...</select
-    >
-    <input type="checkbox" disabled class="form-check-input" />
-    <input type="submit" disabled class="btn btn-primary" />
-
-    <!-- ヘルプテキスト -->
-    <h1>ヘルプテキスト</h1>
-    <div class="input-group">
-      <div class="input-group-prepend">
-        <div class="input-group-text">http://</div>
-      </div>
-      <input type="text" class="form-control" />
-      <div class="input-group-append">
-        <div class="input-group-text">.example.com/</div>
-      </div>
-    </div>
-
-    <!-- バリデーション -->
-    <h1>バリデーション</h1>
-    <form>
-      <div class="form-row align-items-center mb-3">
-        <div class="col">
-          <label for="text9a">First Name</label>
-          <input type="text" id="text9a" class="form-control is-valid" />
-          <div class="valid-feedback">OK</div>
-        </div>
-        <div class="col">
-          <label for="text9b">Last Name</label>
-          <input type="text" id="text9b" class="form-control is-invalid" />
-          <div class="invalid-feedback">Please enter a last name.</div>
-        </div>
-      </div>
-      <div class="form-row align-items-center mb-5">
-        <div class="col">
-          <label for="text9c">First Name</label>
-          <input type="text" id="text9c" class="form-control is-valid" />
-          <div class="valid-tooltip">OK</div>
-        </div>
-        <div class="col">
-          <label for="text9d">Last Name</label>
-          <input type="text" id="text9d" class="form-control is-invalid" />
-          <div class="invalid-tooltip">Please enter a last name.</div>
-        </div>
-      </div>
-      <div class="form-row align-items-center">
-        <div class="col">
-          <div class="form-check">
-            <input
-              type="checkbox"
-              id="check9a"
-              class="form-check-input is-valid"
-            />
-            <label for="check9a" class="form-check-label">Checkbox</label>
-          </div>
-        </div>
-        <div class="col">
-          <div class="form-check">
-            <input
-              type="checkbox"
-              id="check9b"
-              class="form-check-input is-invalid"
-            />
-            <label for="check9b" class="form-check-label">Checkbox</label>
-          </div>
-        </div>
-      </div>
-    </form>
-
-    <!-- HTMLバリデーション -->
-    <h1>HTMLバリデーション</h1>
-    <form class="needs-validation" novalidate>
         <div class="form-group">
-          <label for="text10">Name</label>
-          <div class="input-group">
-            <input type="text" class="form-control" id="text10" placeholder="Name" required>
-            <div class="invalid-feedback">
-              Please enter your name.
-            </div>
-          </div>
+          <label for="group1">所属1:</label>
+          <select id="group1" class="form-control">
+            <option></option>
+            <option>秋田車両センター</option>
+            <option>新潟車両センター</option>
+          </select>
         </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
-      </form>
-      <script>
-      (function() {
-        window.addEventListener('load', function() {
-          var forms = document.getElementsByClassName('needs-validation');
-          var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-              if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-              form.classList.add('was-validated');
-            }, false);
-          });
-        }, false);
-      })();
-      </script>
+        <div class="form-group">
+          <label for="group2">所属2:</label>
+          <select id="group2" class="form-control">
+            <option></option>
+            <option>ロングシート</option>
+            <option>A車両グループ</option>
+            <option>B車両グループ</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="group3">所属3:</label>
+          <select id="group3" class="form-control">
+            <option></option>
+            <option>H101</option>
+            <option>山手線</option>
+            <option>XX編成</option>
+          </select>
+      </div>
+    </div>
 
+    <div class="container">
+      <label for="text5b"><span>車号:</span></label>
+      <div class="row">
+          <div class='col-sm-6'>
+              <div class="form-group">
+                  <div class='input-group date' id='datetimepicker1'>
+                      <input type='text' class="form-control" />
+                      <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-calendar"></span>
+                      </span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <input type="submit" disabled class="btn btn-primary" />
 
 
 
@@ -408,5 +127,13 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="script.js">
+
+  </script>
   </body>
 </html>
