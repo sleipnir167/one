@@ -1,0 +1,34 @@
+.login-header {
+  width: 400px;
+  background-color: #4c944c;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+}
+
+.login-container {
+  width: 400px;
+  background-color: silver;
+  margin: 0 auto;
+}
+
+.login-container p {
+  margin-top: 0;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.login-container p input {
+  width: 300px;
+  height: 30px;
+  border-style: 10px solid;
+}
+
+.login-container p input[type="submit"] {
+  height: 50px;
+  background-color: #4c944c;
+  color: white;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

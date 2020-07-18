@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form" name="test_form" onsubmit="return check();">
+      <div>
+        <span>テキストボックス</span>
+        <input type="text" name="text" placeholder="text" />
+      </div>
+
+      <div>
+        <span>パスワード</span>
+        <input type="password" name="password" placeholder="password" />
+      </div>
+
+      <div>
+        <span>複数行のテキスト</span>
+        <textarea
+          name="textarea"
+          cols="50"
+          rows="5"
+          placeholder="placeholder"
+        ></textarea>
+      </div>
+
+      <div>
+        <span>ラジオボタン</span>
+        <input type="radio" name="radio" value="項目1" checked />項目1
+        <input type="radio" name="radio" value="項目2" />項目2
+        <input type="radio" name="radio" value="項目3" />項目3
+      </div>
+
+      <div>
+        <span>チェックボックス</span>
+        <input type="checkbox" name="checkbox" value="項目1" />項目1
+        <input type="checkbox" name="checkbox" value="項目2" />項目2
+        <input type="checkbox" name="checkbox" value="項目3" />項目3
+      </div>
+
+      <div>
+        <span>セレクトボックス</span>
+        <select name="selectbox">
+          <option value="項目1">項目1</option>
+          <option value="項目2">項目2</option>
+          <option value="項目3">項目3</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="submit" value="送信" />
+      </div>
+    </form>
+  </body>
+</html>

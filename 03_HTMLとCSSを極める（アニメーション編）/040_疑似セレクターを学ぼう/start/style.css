@@ -1,0 +1,28 @@
+a {
+  color: orange;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: red;
+}
+
+a:focus {
+  color: green;
+}
+
+a:active {
+  color: purple;
+}
+
+div span {
+  color: olive;
+}
+
+div :nth-child(even) {
+  color: pink;
+}
+/*# sourceMappingURL=style.css.map */

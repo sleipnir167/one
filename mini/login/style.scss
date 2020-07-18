@@ -1,0 +1,39 @@
+$cGreen: rgb(76, 148, 76);
+$cSilve: silver;
+$cWhite: white;
+
+.login-header {
+  width: 300px;
+  background-color: $cGreen;
+  color: $cWhite;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+}
+
+.login-container {
+  width: 400px;
+  background-color: $cSilve;
+  margin: 0 auto;
+
+  & p {
+    margin-top: 0;
+    padding: 10px;
+    // padding: 5px;
+    margin-left: 30px;
+    // padding-left: 30px;
+
+    & input {
+      width: 300px;
+      height: 30px;
+      border-style: 10px solid;
+    }
+
+    & input[type="submit"] {
+      height: 50px;
+      background-color: $cGreen;
+      color: white;
+      margin: 0 auto;
+    }
+  }
+}
