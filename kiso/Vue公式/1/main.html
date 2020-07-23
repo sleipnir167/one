@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 初期 -->
+    <div id="app">
+        {{myText}}
+    </div>
+
+    <!-- v-bind -->
+    <div id="app-2">
+        <!-- v-bindは、この要素の title 属性を Vue インスタンスの message プロパティによって更新して保存する　という意味 -->
+          <span v-bind:title="message">
+            Hover your mouse over me for a few seconds
+            to see my dynamically bound title!
+          </span>
+        </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>sample</title>
+  </head>
+  <body>
+
+    <div id="main">
+      <my-component v-bind:message="message"></my-component>
+      <my-button label="a" v-on:click="labelClick"></my-button>
+      <my-button label="b" v-on:click="labelClick"></my-button>
+      <my-button></my-button>
+    </div>
+
+    <div id="masutest">{{ obj }}</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="hello_vue.js"></script>
+  </body>
+</html>
