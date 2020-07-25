@@ -1,26 +1,74 @@
 <!DOCTYPE html>
 <html lang="jp">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- 初期 -->
     <div id="app">
-        {{myText}}
+      {{myText}}
     </div>
 
     <!-- v-bind -->
     <div id="app-2">
-        <!-- v-bindは、この要素の title 属性を Vue インスタンスの message プロパティによって更新して保存する　という意味 -->
-          <span v-bind:title="message">
-            Hover your mouse over me for a few seconds
-            to see my dynamically bound title!
-          </span>
-        </div>
+      <!-- v-bindは、この要素の title 属性を Vue インスタンスの message プロパティによって更新して保存する　という意味 -->
+      <span v-bind:title="message">
+        Hover your mouse over me for a few seconds to see my dynamically bound
+        title!
+      </span>
+    </div>
 
-</body>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="script.js"></script>
+    <!-- v-if -->
+    <div id="app-3">
+      <span v-if="seen">Now you see me</span>
+    </div>
+
+    <!-- v-for -->
+    <div id="app-4">
+      <ol>
+        <li v-for="todo in todos">
+          {{todo.text}}
+        </li>
+      </ol>
+    </div>
+
+    <!-- v-on -->
+    <div id="app-5">
+      <p>{{message}}</p>
+      <button v-on:click="reverseMessage">Reverse Message</button>
+    </div>
+
+    <!-- v-model -->
+    <div id="app-6">
+      <p>{{message}}</p>
+      <input v-model="message" />
+    </div>
+
+    <!-- コンポーネント -->
+    <div id="app-7">
+      <ol>
+        <todo-item 
+        v-for="item in groceryList"
+        v-bind:todo="item"
+        v-bind:key="item.id"
+        ></todo-item>
+      </ol>
+    </div>
+
+    <div id="app-8">
+        <P>{{foo}}</P>
+        <button v-on:click="foo = 'baz'">change it</button>
+    </div>
+
+
+    <div id="app-10">
+        <p>{{test}}</p>
+        <button v-on:click="onppp">clickon</button>
+    </div>
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="script.js"></script>
 </html>
